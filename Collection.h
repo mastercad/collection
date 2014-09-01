@@ -31,9 +31,9 @@ template<typename T>class Collection
     Node<T>& operator=(const T&);
     
     Node<T>* operator++ ();
-    const Node<T>* operator++ (int);
+    Node<T>* operator++ (int);
     Node<T>* operator-- ();
-    const Node<T>* operator-- (int);
+    Node<T>* operator-- (int);
 
     Collection();
     ~Collection();

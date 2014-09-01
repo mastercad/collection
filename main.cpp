@@ -94,6 +94,7 @@ int main(int argc, char **argv) {
   i = 0;
   for (i = 0; i < 1; i++) {
     Entity oEntity;
+    oEntity.setName("1. Entity der SecCollection");
     oSecCollection.add(oEntity);
   }
   
@@ -111,8 +112,7 @@ int main(int argc, char **argv) {
   // die neue Art Collections zu iterieren 
   oNewCollection.reset();
   
-  while (oNewCollection++) {
-    Node<Entity>* pNode = oNewCollection.getActualNode();
+  while (Node<Entity>* pNode = oNewCollection++) {
     Entity oEntity = pNode->getData();
     std::cout << "DATA: " << std::endl;
     std::cout << oEntity.getName() << std::endl;

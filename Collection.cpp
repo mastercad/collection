@@ -196,7 +196,7 @@ template<typename T>Node<T>* Collection<T>::operator++ () {
 }
 
 // Object++
-template<typename T>const Node<T>* Collection<T>::operator++ (int iIndex) {
+template<typename T>Node<T>* Collection<T>::operator++ (int iIndex) {
   Node<T>* pTmp = _pNode;
   if (_pNode) {
     _pNode = _pNode->getNext();
@@ -211,7 +211,7 @@ template<typename T>Node<T>* Collection<T>::operator-- () {
   return _pNode;
 }
 
-template<typename T>const Node<T>* Collection<T>::operator-- (int iIndex) {
+template<typename T>Node<T>* Collection<T>::operator-- (int iIndex) {
   Node<T>* pTmp = _pNode;
   if (_pNode) {
     _pNode = _pNode->getPrev();
