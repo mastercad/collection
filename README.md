@@ -1,15 +1,14 @@
 Collection
 ==========
-
 eine Collection Klasse auf Basis einer doppelt verketteten Liste in Anlehnung an das Entity/Collection Pattern
 
-==========
 
 Collection ist eine kleine Fingerübung für mich um in C++ nach all der Zeit wieder rein zu kommen und um eine Vergleichbare Funktionalität an der Hand zu haben, wie es Array in PHP bietet.
 
 Collection ist eine template Klasse, der man einen beliebigen Datentyp, also auch jede Klasse, übergeben kann.
 
 Initialisiert wird die Collection per
+-------------------------------------
 
 Collection<DATENTYP> 
 
