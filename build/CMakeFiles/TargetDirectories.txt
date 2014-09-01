@@ -1,0 +1,1 @@
+/media/daten/Projekte/Kdeveloper/Collection/build/CMakeFiles/collection.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/collection.dir/main.o  -o collection -rdynamic 
