@@ -10,35 +10,35 @@ Collection ist eine template Klasse, der man einen beliebigen Datentyp, also auc
 Initialisiert wird die Collection per
 -------------------------------------
 
-<code>Collection<DATENTYP></code>
+>`Collection<DATENTYP>;`
 
 wobei DATENTYP jeden möglichen Datentyp repräsentiert.
 
 gefüllt wird die Collection per
 
-<code>oCollection.add(DATENTYP);</code>
+>`oCollection.add(DATENTYP);`
 
 oder per
 
-<code>oCollection[0] = DATENTYP;</code>
+>`oCollection[0] = DATENTYP;`
 
 Iteriert werden kann die Collection per
 
-<code>oCollection.reset();
+<pre>oCollection.reset();
 
 while (oCollection++) {
   Node<DATENTYP>* pNode = oCollection.getActualNode();
   DATENTYP oEntity = pNode->getData();
 }
-</code>
+</pre>
 
 oder per
 
-<code>
+<pre>
 Node<DATENTYP>* pNode = oCollection.getFirstNode();
 
 while(pNode) {
   DATENTYP oEntity = pNode->getData();
   pNode = pNode->getNext();
 }
-</code>
+</pre>
