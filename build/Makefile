@@ -153,6 +153,21 @@ collection/fast:
 .PHONY : collection/fast
 
 # target to build an object file
+Entity.o:
+	$(MAKE) -f CMakeFiles/collection.dir/build.make CMakeFiles/collection.dir/Entity.o
+.PHONY : Entity.o
+
+# target to preprocess a source file
+Entity.i:
+	$(MAKE) -f CMakeFiles/collection.dir/build.make CMakeFiles/collection.dir/Entity.i
+.PHONY : Entity.i
+
+# target to generate assembly for a file
+Entity.s:
+	$(MAKE) -f CMakeFiles/collection.dir/build.make CMakeFiles/collection.dir/Entity.s
+.PHONY : Entity.s
+
+# target to build an object file
 main.o:
 	$(MAKE) -f CMakeFiles/collection.dir/build.make CMakeFiles/collection.dir/main.o
 .PHONY : main.o
@@ -180,6 +195,9 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... Entity.o"
+	@echo "... Entity.i"
+	@echo "... Entity.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

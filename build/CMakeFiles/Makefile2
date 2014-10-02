@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /media/daten/Projekte/Kdeveloper/Collection/build
 CMakeFiles/collection.dir/all:
 	$(MAKE) -f CMakeFiles/collection.dir/build.make CMakeFiles/collection.dir/depend
 	$(MAKE) -f CMakeFiles/collection.dir/build.make CMakeFiles/collection.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /media/daten/Projekte/Kdeveloper/Collection/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/daten/Projekte/Kdeveloper/Collection/build/CMakeFiles  1 2
 	@echo "Built target collection"
 .PHONY : CMakeFiles/collection.dir/all
 
@@ -69,7 +69,7 @@ all: CMakeFiles/collection.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/collection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/daten/Projekte/Kdeveloper/Collection/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/daten/Projekte/Kdeveloper/Collection/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/collection.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/daten/Projekte/Kdeveloper/Collection/build/CMakeFiles 0
 .PHONY : CMakeFiles/collection.dir/rule

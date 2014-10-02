@@ -2,7 +2,7 @@
 #define __NODE_H__
 
 #include <string>
-#include "Entity.cpp"
+#include "Entity.h"
 
 template<class T> class Node {
 public:

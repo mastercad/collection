@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/collection.dir/main.o"
+  "CMakeFiles/collection.dir/Entity.o"
   "collection.pdb"
   "collection"
 )

@@ -1,1 +1,1 @@
-/usr/bin/c++   -g    CMakeFiles/collection.dir/main.o  -o collection -rdynamic 
+/usr/bin/c++   -g    CMakeFiles/collection.dir/main.o CMakeFiles/collection.dir/Entity.o  -o collection -rdynamic 

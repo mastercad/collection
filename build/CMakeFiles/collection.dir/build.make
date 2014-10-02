@@ -72,14 +72,39 @@ CMakeFiles/collection.dir/main.o.provides: CMakeFiles/collection.dir/main.o.requ
 
 CMakeFiles/collection.dir/main.o.provides.build: CMakeFiles/collection.dir/main.o
 
+CMakeFiles/collection.dir/Entity.o: CMakeFiles/collection.dir/flags.make
+CMakeFiles/collection.dir/Entity.o: ../Entity.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/daten/Projekte/Kdeveloper/Collection/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/collection.dir/Entity.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/collection.dir/Entity.o -c /media/daten/Projekte/Kdeveloper/Collection/Entity.cpp
+
+CMakeFiles/collection.dir/Entity.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/collection.dir/Entity.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/daten/Projekte/Kdeveloper/Collection/Entity.cpp > CMakeFiles/collection.dir/Entity.i
+
+CMakeFiles/collection.dir/Entity.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/collection.dir/Entity.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/daten/Projekte/Kdeveloper/Collection/Entity.cpp -o CMakeFiles/collection.dir/Entity.s
+
+CMakeFiles/collection.dir/Entity.o.requires:
+.PHONY : CMakeFiles/collection.dir/Entity.o.requires
+
+CMakeFiles/collection.dir/Entity.o.provides: CMakeFiles/collection.dir/Entity.o.requires
+	$(MAKE) -f CMakeFiles/collection.dir/build.make CMakeFiles/collection.dir/Entity.o.provides.build
+.PHONY : CMakeFiles/collection.dir/Entity.o.provides
+
+CMakeFiles/collection.dir/Entity.o.provides.build: CMakeFiles/collection.dir/Entity.o
+
 # Object files for target collection
 collection_OBJECTS = \
-"CMakeFiles/collection.dir/main.o"
+"CMakeFiles/collection.dir/main.o" \
+"CMakeFiles/collection.dir/Entity.o"
 
 # External object files for target collection
 collection_EXTERNAL_OBJECTS =
 
 collection: CMakeFiles/collection.dir/main.o
+collection: CMakeFiles/collection.dir/Entity.o
 collection: CMakeFiles/collection.dir/build.make
 collection: CMakeFiles/collection.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable collection"
@@ -90,6 +115,7 @@ CMakeFiles/collection.dir/build: collection
 .PHONY : CMakeFiles/collection.dir/build
 
 CMakeFiles/collection.dir/requires: CMakeFiles/collection.dir/main.o.requires
+CMakeFiles/collection.dir/requires: CMakeFiles/collection.dir/Entity.o.requires
 .PHONY : CMakeFiles/collection.dir/requires
 
 CMakeFiles/collection.dir/clean:

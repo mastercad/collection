@@ -2,14 +2,15 @@
 #include <string>
 #include <sstream>
 
-#include "Collection.cpp"
+#include "Collection.h"
+#include "Entity.h"
 
 using namespace std;
 
 int main(int argc, char **argv) {
   Collection<Entity> oCollection;
   
-  for (int i = 0; i <= 100; i++) {
+  for (int i = 0; i <= 30; i++) {
     Entity oEntity;
     string a;
     std::ostringstream convert;
@@ -28,7 +29,7 @@ int main(int argc, char **argv) {
   oEntity = oCollection.get(28);
   cout << oEntity.getName() << endl;
   
-  Node<Entity>* pNode = oCollection.getFirstNode();
+  Collection<Entity>* pNode = oCollection.getFirstNode();
   
   int i = 0;
   while (pNode && i < 20) {
@@ -92,7 +93,7 @@ int main(int argc, char **argv) {
   Collection<Entity> oSecCollection;
 
   i = 0;
-  for (i = 0; i < 1; i++) {
+  for (i = 0; i < 10; i++) {
     Entity oEntity;
     oEntity.setName("1. Entity der SecCollection");
     oSecCollection.add(oEntity);
@@ -103,16 +104,19 @@ int main(int argc, char **argv) {
   oNewCollection = oSecCollection;
   
   i = 0;
-  pNode = oNewCollection.getFirstNode();
-  while (pNode) {
-    std::cout << pNode << std::endl;
-    pNode = pNode->getNext();
+//   pNode = oNewCollection.getFirstNode();
+  oNewCollection.reset();
+//   while (Collection<Entity>* pNode = oNewCollection++) {
+  while (oNewCollection++) {
+    std::cout << "PostKrement IntKey : " << oNewCollection.getIntKey() << std::endl;
+//     std::cout << &oNewCollection << std::endl;
+//     pNode = pNode->getNext();
   }
   
   // die neue Art Collections zu iterieren 
-  oNewCollection.reset();
+//   oNewCollection.reset();
   
-  while (Node<Entity>* pNode = oNewCollection++) {
+  while (Collection<Entity>* pNode = --oNewCollection) {
     Entity oEntity = pNode->getData();
     std::cout << "DATA: " << std::endl;
     std::cout << oEntity.getName() << std::endl;
