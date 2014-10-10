@@ -4,7 +4,7 @@
 CMakeFiles/collection.dir/Entity.o: ../Entity.cpp
 CMakeFiles/collection.dir/Entity.o: ../Entity.h
 
-CMakeFiles/collection.dir/main.o: ../Collection.h
+CMakeFiles/collection.dir/main.o: ../Collection.tpp
 CMakeFiles/collection.dir/main.o: ../Entity.h
 CMakeFiles/collection.dir/main.o: ../main.cpp
 

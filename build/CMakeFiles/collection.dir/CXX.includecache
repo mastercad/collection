@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/media/daten/Projekte/Kdeveloper/Collection/Collection.h
+/media/daten/Projekte/Kdeveloper/Collection/Collection.tpp
 iostream
 -
 stdexcept
 -
+
+/media/daten/Projekte/Kdeveloper/Collection/Entity.cpp
+Entity.h
+/media/daten/Projekte/Kdeveloper/Collection/Entity.h
 
 /media/daten/Projekte/Kdeveloper/Collection/Entity.h
 string
@@ -23,8 +27,8 @@ string
 -
 sstream
 -
-Collection.h
-/media/daten/Projekte/Kdeveloper/Collection/Collection.h
+Collection.tpp
+/media/daten/Projekte/Kdeveloper/Collection/Collection.tpp
 Entity.h
 /media/daten/Projekte/Kdeveloper/Collection/Entity.h
 

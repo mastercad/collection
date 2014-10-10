@@ -1,5 +1,45 @@
+#ifndef __NODE_TPP__
+#define __NODE_TPP__
+
 #include <string>
-#include "Node.h"
+#include "Entity.h"
+
+template<class T> class Node {
+public:
+  
+  void setNext(Node*);
+  
+  Node* getNext(void);
+  
+  void setPrev(Node*);
+  
+  Node* getPrev(void);
+  
+  void setData(T);
+  
+  T& getData(void);
+  
+  std::string getStringKey();
+  
+  int getIntKey();
+  
+  void setKey(const std::string);
+  
+  void setKey(int);
+  
+  Node* add(Node*);
+  
+  Node();
+  
+  ~Node();
+
+private:
+  T _mData;
+  int _iKey;
+  std::string _sKey;
+  Node *_pNext;
+  Node *_pPrev;
+};
 
 template<typename T>void Node<T>::setNext(Node* pNextNode) {
   _pNext = pNextNode;
@@ -46,4 +86,4 @@ template<typename T>Node<T>::Node() {
 
 template<typename T>Node<T>::~Node() {
 }
-
+#endif

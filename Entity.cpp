@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Entity.h"
 
 std::string Entity::getName() const {

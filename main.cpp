@@ -2,7 +2,7 @@
 #include <string>
 #include <sstream>
 
-#include "Collection.h"
+#include "Collection.tpp"
 #include "Entity.h"
 
 using namespace std;

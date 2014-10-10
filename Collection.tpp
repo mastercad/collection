@@ -1,5 +1,5 @@
-#ifndef __COLLECTION_H__
-#define __COLLECTION_H__
+#ifndef __COLLECTION_TPP__
+#define __COLLECTION_TPP__
 
 #include <iostream>
 #include <stdexcept>
@@ -21,6 +21,7 @@ public:
     bool remove(const unsigned int);
     bool replace(const unsigned int, const T);
     
+    void reverse();
     bool reset();
     bool checkKeyExists(const unsigned int);
     bool checkKeyExists(const std::string);
@@ -85,19 +86,19 @@ template<typename T>Collection<T>* Collection<T>::_pLastNode = 0;
 template<typename T>unsigned int Collection<T>::add(const T& mData, const int iKey = -1) {
   Collection<T>* pNode = new Collection<T>;
 
+  pNode->setPrev(_pNode);
+
   if (_pNode) {
-    pNode->setPrev(_pNode);
     _pNode->setNext(pNode);
   }
-  pNode->setNext(NULL);
   
+  /** @todo hier noch überarbeiten, wenn iKey übergeben wird, muss gesucht werden, ob replaced werden muss ! **/
   if (iKey >= 0) {
     pNode->setKey(iKey);
   } else {
     pNode->setKey(_iCount);
   }
   pNode->setData(mData);
-//   setNext(pNode);
   
   if (0 == _pFirstNode) {
     _pFirstNode = pNode;
@@ -361,4 +362,15 @@ template<typename T>void Collection<T>::setKey(int iKey) {
   _iKey = iKey;
 }
 
+template<typename T>void Collection<T>::reverse() {
+  Collection<T>* p = 0; Collection<T>* i = _pFirstNode; Collection<T>* n;
+  while (i)
+  {
+    n = i->next;
+    i->next = p;
+    p = i;
+    i = n;
+  }
+  _pNode = p;
+}
 #endif
