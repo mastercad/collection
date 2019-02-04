@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmastercad%2FCollection.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmastercad%2FCollection?ref=badge_shield)
+
 Collection
 ==========
 eine Collection Klasse auf Basis einer doppelt verketteten Liste in Anlehnung an das Entity/Collection Pattern
@@ -42,3 +44,7 @@ while(pNode) {
   pNode = pNode->getNext();
 }
 </pre>
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmastercad%2FCollection.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmastercad%2FCollection?ref=badge_large)
